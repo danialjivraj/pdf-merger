@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Merger</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header-section">
+            <h1>PDF MERGER</h1>
+            <p>Upload 2 or more PDF files to merge.</p>
+        </div>
+        <form method="post" enctype="multipart/form-data">
+
+            <div class="drop-section">
+                <div class="col">
+                    <div class="cloud-icon">
+                        <img src="/static/icons/cloud.png" alt="cloud">
+                    </div>
+                    <span>Press the button below</span>
+                    <span>to browse your files!</span>
+                    <button type="button" class="file-selector" id="pdf_files_button">Browse Files</button><br><br>
+                    <input type="file" class="file-selector-input" name="pdf_files" accept="application/pdf" multiple
+                        id="pdf_files">
+                </div>
+                <div class="col">
+                </div>
+            </div>
+            <div class="list-section">
+                <div class="list-title">Uploaded Files</div>
+                <ul id="sortable" class="list">
+                    <!-- Files will be listed here after selection -->
+                </ul>
+                <input type="hidden" id="file_order" name="file_order">
+            </div>
+
+            <!-- Error messages -->
+            <input type="submit" value="Merge PDFs">
+            {% with messages = get_flashed_messages() %}
+            {% if messages %}
+            <div class="flash-messages">
+                {% for message in messages %}
+                <div class="error-message">{{ message }}</div>
+                {% endfor %}
+            </div>
+            {% endif %}
+            {% endwith %}
+
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="/static/script.js"></script>
+</body>
+
+</html>
