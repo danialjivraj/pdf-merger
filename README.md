@@ -22,7 +22,7 @@ You can run this project by running the following in the terminal:
 python app.py
 ```
 
-And go to the following port to experiment with the project.
+And go to the following port to experiment with the project:
 ```
 http://127.0.0.1:5000
 ```
