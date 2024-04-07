@@ -28,9 +28,9 @@ http://127.0.0.1:5000
 ```
 
 ## Preview
-<img src="https://github.com/danialjivraj/pdf-merger/assets/61945058/9ee5b412-5ceb-4739-8417-f0988bc0c5ff" alt="image" width="410"/>
+<img src="https://github.com/danialjivraj/pdf-merger/assets/61945058/9467e804-1b12-4dcf-a645-9831f4a8bd72" alt="image" width="410"/>
 
-<img src="https://github.com/danialjivraj/pdf-merger/assets/61945058/344fc446-c872-46bd-abca-f9c205a55b57" alt="image" width="410"/>
+<img src="https://github.com/danialjivraj/pdf-merger/assets/61945058/bd3aa6d9-7c7b-41b2-a0c7-b9a16035a5cb" alt="image" width="410"/>
 
 
 
